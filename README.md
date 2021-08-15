@@ -1,2 +1,2 @@
 # Dynamo-Docker
-Dockerized full node for DYNAMO coin.
+Dockerized stuff AND things for DYNAMO coin.
