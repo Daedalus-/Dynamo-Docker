@@ -19,7 +19,7 @@ RUN apt-get update && \
     echo "rpcport=6433" >> ~/.dynamo/dynamo.conf && \
     echo "rpcuser=dynamo" >> ~/.dynamo/dynamo.conf && \
     echo "rpcpassword=123456" >> ~/.dynamo/dynamo.conf && \
-    echo "rpcallowip=0.0.0/0" >> ~/.dynamo/dynamo.conf && \
+    echo "rpcallowip=0.0.0.0/0" >> ~/.dynamo/dynamo.conf && \
     echo "fallbackfee=0.01" >> ~/.dynamo/dynamo.conf && \
     echo "nftdbkey=supersecretstring" >> ~/.dynamo/dynamo.conf && \
     echo "nftnode=true" >> ~/.dynamo/dynamo.conf && \
