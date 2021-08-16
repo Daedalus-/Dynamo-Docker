@@ -32,6 +32,10 @@ RUN apt-get update && \
     ./configure --with-incompatible-bdb && \
     ./make-dynamo.sh || echo "failed!" && \
     cp ./src/bitcoind /bin/dynamo-core && \
+    cp ./src/bitcoin-cli /bin/dynamo-cli && \
+    cd .. && rm -rfv dynamo-core && \
+    apt-get remove -y build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 && \
+    apt-get autoremove -y && \
     apt-get clean && rm -rf /var/lib/apt/lists/* 
  
 	
