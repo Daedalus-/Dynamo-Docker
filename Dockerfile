@@ -2,8 +2,6 @@ FROM ubuntu:bionic
 
 EXPOSE 6432 6433
 
-VOLUME dynamo 
-
 WORKDIR /dynamo
 
 RUN apt-get update && \
